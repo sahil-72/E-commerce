@@ -251,7 +251,7 @@ app.post('/getcart', fetchUser, async (req,res) => {
 
 //HOME PAGE
 app.get('/', (req, res) => {
-    res.send('express running')
+    res.json('express running');
 })
 
 
