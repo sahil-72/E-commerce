@@ -29,7 +29,7 @@ export default function AddProduct() {
         let formData = new FormData();
         formData.append('product', image);
 
-        await fetch('http://localhost:8000/upload', {
+        await fetch('https://stopshop-background.onrender.com/upload', {
             method: 'POST',
             headers: {
                 Accept: 'application/json',
@@ -40,7 +40,7 @@ export default function AddProduct() {
         if (responseData.success) {
             product.image = responseData.image_url;
             
-            await fetch('http://localhost:8000/addproduct',{
+            await fetch('https://stopshop-background.onrender.com/addproduct',{
                 method: 'POST',
                 headers: {
                     Accept: 'application/json',
