@@ -6,7 +6,7 @@ export default function ListProduct() {
   const [allproducts, setAllproducts] = useState([]);
 
   const fetchInfo = async () => {
-    await fetch('http://localhost:8000/allproducts').then((resp) => resp.json()).then((data) => { setAllproducts(data) })
+    await fetch('https://stopshop-background.onrender.com/allproducts').then((resp) => resp.json()).then((data) => { setAllproducts(data) })
   }
 
   useEffect(() => {
@@ -14,7 +14,7 @@ export default function ListProduct() {
   }, [])
 
   const remove_product = async (id) => {
-    await fetch('http://localhost:8000/removeproduct', {
+    await fetch('https://stopshop-background.onrender.com/removeproduct', {
       method: 'POST',
       headers: {
         Accept: 'application/json',
