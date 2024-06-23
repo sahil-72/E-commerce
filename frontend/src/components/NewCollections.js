@@ -7,7 +7,7 @@ export default function NewCollections() {
   const [new_collections, setNew_collections] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:8000/newcollection').then((resp) => resp.json()).then((data) => setNew_collections(data))
+    fetch('https://stopshop-background.onrender.com/newcollection').then((resp) => resp.json()).then((data) => setNew_collections(data))
   }, [])
   
   return (
