@@ -18,7 +18,7 @@ export default function LoginSignup() {
   const login = async () => {
     console.log('login',formData)
     let responseData;
-    await fetch('http://localhost:8000/login', {
+    await fetch('https://stopshop-background.onrender.com/login', {
       method: 'POST',
       headers: {
         Accept: 'application/form-data',
@@ -40,7 +40,7 @@ export default function LoginSignup() {
   const signup = async () => {
     console.log('signup',formData)
     let responseData;
-    await fetch('http://localhost:8000/signup', {
+    await fetch('https://stopshop-background.onrender.com/signup', {
       method: 'POST',
       headers: {
         Accept: 'application/form-data',
