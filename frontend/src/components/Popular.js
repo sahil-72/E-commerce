@@ -6,7 +6,7 @@ export default function Popular() {
   const [data, setdata] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:8000/popular').then((resp) => resp.json()).then((info) => setdata(info))
+    fetch('https://stopshop-background.onrender.com/popular').then((resp) => resp.json()).then((info) => setdata(info))
   }, [])
 
   return (
