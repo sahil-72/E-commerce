@@ -1,5 +1,4 @@
 import React from 'react'
-import Sidebar from '../components/Sidebar'
 import { Route, Routes } from 'react-router-dom';
 import AddProduct from '../components/AddProduct';
 import ListProduct from '../components/ListProduct';
