@@ -8,6 +8,7 @@ const cors = require('cors');
 const { type } = require('os');
 const { read } = require('fs');
 const { error } = require('console');
+const port = process.env.PORT || 8000
 
 app.use(express.json());
 app.use(cors());
@@ -276,7 +277,7 @@ app.post('/upload', upload.single('product'), (req, res) => {
 
 
 //LISTEN
-app.listen(8000, (err) => {
+app.listen(port, (err) => {
     if (!err) {
         console.log('server running')
     }
